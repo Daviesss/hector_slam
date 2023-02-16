@@ -15,7 +15,7 @@ cd src
 ```
 Launching the hactor slam Node:
 ```
-roslaunch hector_slam_launch tutorail.launch 
+roslaunch hector_slam_launch tutorial.launch 
 ```
 Open rviz on a new terminal:
 ```
