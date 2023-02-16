@@ -3,11 +3,13 @@
 <launch>
 
   <arg name="geotiff_map_file_path" default="$(find hector_geotiff)/maps"/>
+  
+<!--  Set the use_sim_time to true,if you are using simulation. -->
+  <param name="/use_sim_time" value="false"/> 
 
-  <param name="/use_sim_time" value="false"/>
-
-  <node pkg="rviz" type="rviz" name="rviz"
-    args="-d $(find hector_slam_launch)/rviz_cfg/mapping_demo.rviz"/>
+<!--  Uncomment the rviz tag,if you want the launch node to automatically launch rviz on startup. -->
+  <!--   <node pkg="rviz" type="rviz" name="rviz"
+    args="-d $(find hector_slam_launch)/rviz_cfg/mapping_demo.rviz"/> -->
 
   <include file="$(find hector_mapping)/launch/mapping_default.launch"/>
 
