@@ -1,7 +1,7 @@
 # Hector_slam.
 Hector slam stack for mapping ..
 
-This packge entails a ros package for mapping "Hector slam".
+This package entails a ros package for mapping "Hector slam".
 
 To install hector mapping stack,type the following command below:
 ```
